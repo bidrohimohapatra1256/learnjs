@@ -202,6 +202,7 @@ function tick() {
         <span>${s}</span>
     `;
   clock.innerHTML = html;
+  const menuBtn = document.getElementById("bar");
 }
 
 setInterval(tick, 1000);
