@@ -245,9 +245,7 @@ textInput.addEventListener("input", () => {
     wordCount++;
   }
 
-  worldCountElement.textContent = wordCount;
-  letterCountElement.textContent = letterCount;
-  spaceCountElement.textContent = spaceCount;
+ 
 });
 
 
