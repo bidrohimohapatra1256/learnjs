@@ -90,14 +90,7 @@ async function fetchRepos(username) {
         const singleElement = document.createElement("div");
         singleElement.classList.add("repo-card");
         const html = `
-        <a href=${modifiedUrl} class="repo-title">${name}</a>
-        <p class="repo-subtitle">${description}</p>
-        <div class="popularity">
-            <p class="technology-used">${language}</p>
-            <p class="stars"><i class="fa-regular fa-star"></i>${watchers_count}</p>
-            <img src="./git-fork_1.svg" alt="Fork SVG" class="fork-svg">
-            <span class="forked">${forks_count}</span>
-        </div>
+       
     
         <p class="pill">Public</p>
         `;
