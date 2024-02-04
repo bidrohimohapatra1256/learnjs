@@ -23,41 +23,7 @@ async function fetchData(username) {
     } = await response.json();
 
     const html = `
-    <div
-      class="user-avatar"
-      style="background: url(${avatar_url}) no-repeat center/cover"
-    ></div>
-    <p class="user-name">${login}</p>
-    <button class="follow">Follow</button>
-    <p class="user-bio">${bio}</p>
-    <div class="followers-info">
-      <a href="#">
-        <i class="fa-solid fa-person"></i>
-        <span class="followers">${followers}</span> follower
-      </a>
-
-      <a href='#'>
-        <span class="following">${following} </span> following
-      </a>
-
-      <div class="icon-container">
-        <i class="fa-regular fa-building"></i>
-        <a href="#" class="company">${company}</a>
-      </div>
-      <div class="icon-container">
-        <i class="fa-sharp fa-solid fa-location-dot"></i>
-        <a href="#" class="location">${location}</a>
-      </div>
-      <div class="icon-container">
-        <i class="fa-regular fa-solid fa-link"></i>
-        <a href="#" class="blog">${blog}</a>
-      </div>
-      <div class="icon-container">
-        <i class="fa-brands fa-twitter"></i>
-        <a href="#" class="twitter_username">@${twitter_username}</a>
-      </div>
-    </div>
-    `;
+    
 
     const section = document.createElement("section");
     section.classList.add("about-user");
