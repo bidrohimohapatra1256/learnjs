@@ -28,3 +28,15 @@ searchBtn.addEventListener("click", () => {
     p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>");
   }
 });
+// Decimal Numbers
+console.log(323)
+ 
+// Binary Numbers
+console.log(0b11);
+console.log(0B0111);
+ 
+// Hexadecimal Numbers
+console.log(0xfff);
+ 
+// Octal Numbers
+console.log(0562);
