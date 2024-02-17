@@ -467,29 +467,7 @@ itemHeaders.forEach((accordion) => {
     }
   }
   {
-    "private": true,
-    "scripts": {
-      "build": "tsc -b",
-      "watch": "npm run build && (npm run watch:base & npm run watch:vue)",
-      "watch:base": "tsc -b -w",
-      "watch:vue": "cd ./extensions/vscode && npm run watch",
-      "prerelease": "npm run build && npm run test",
-      "version:test": "lerna version --exact --force-publish --yes --sync-workspace-lock --no-push --no-git-tag-version",
-      "release": "npm run release:base && npm run release:vue",
-      "release:base": "lerna publish --exact --force-publish --yes --sync-workspace-lock --no-push",
-      "release:vue": "cd ./extensions/vscode && npm run release",
-      "release:next": "npm run release:next-base && npm run release:next-vue",
-      "release:next-base": "npm run release:base -- --dist-tag next",
-      "release:next-vue": "cd ./extensions/vscode && npm run release:next",
-      "test": "vitest run",
-      "chrome": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=./extensions/vscode ../volar-starter"
-    },
-    "devDependencies": {
-      "@lerna-lite/cli": "latest",
-      "@lerna-lite/publish": "latest",
-      "@volar/language-service": "~2.0.2",
-      "typescript": "latest",
-      "vite": "latest",
+    "
       "vitest": "latest"
     }
   }
