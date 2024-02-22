@@ -4,6 +4,7 @@
 // We are still using Rollup for production builds because it generates
 // smaller files and provides better tree-shaking.
 
+import { PrismaClient } from '@prisma/client'
 import esbuild from 'esbuild'
 import { polyfillNode } from 'esbuild-plugin-polyfill-node'
 import minimist from 'minimist'
@@ -131,3 +132,9 @@ for (const target of targets) {
     })
     .then(ctx => ctx.watch())
 }
+
+const prisma = global.prisma ?? new PrismaClient();
+
+if (process.env.NODE_ENV !== 'production') global.prisma = prisma;
+
+export default prisma;
