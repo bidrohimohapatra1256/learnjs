@@ -181,58 +181,7 @@
     background-color: #111933;
     font-family: sans-serif;
   }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 100px auto 0;
-    max-width: 800px;
-    overflow: hidden;
-  }
-  
-  main > * {
-    grid-row: 1 / 2;
-  }
-  
-  .login,
-  .signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 40% 0;
-    color: #fff;
-    font-size: 30px;
-    background: #cf0b4c;
-  }
-  
-  .login > button,
-  .signup > button {
-    border: none;
-    background-color: #fff;
-  }
-  
-  .login {
-    grid-column: 1 / 2;
-  }
-  .signup {
-    grid-column: 2 / 3;
-  }
-  .login-form {
-    grid-column: 1 / 2;
-    transform: translateX(-100%);
-  }
-  .signup-form {
-    grid-column: 2 / 3;
-    transform: translateX(100%);
-  }
-  
+
   form {
     padding: 30px 20px;
     max-width: 500px;
