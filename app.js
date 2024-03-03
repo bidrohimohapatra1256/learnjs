@@ -4168,49 +4168,7 @@
     }
 
     //utils are public, so we can use it wherever we want
-    window.fp_utils = {
-        $: $,
-        deepExtend: deepExtend,
-        hasClass: hasClass,
-        getWindowHeight: getWindowHeight,
-        css: css,
-        until: until,
-        prevUntil: prevUntil,
-        nextUntil: nextUntil,
-        prev: prev,
-        next: next,
-        last: last,
-        index: index,
-        getList: getList,
-        hide: hide,
-        show: show,
-        isArrayOrList: isArrayOrList,
-        addClass: addClass,
-        removeClass: removeClass,
-        appendTo: appendTo,
-        wrap: wrap,
-        wrapAll: wrapAll,
-        wrapInner: wrapInner,
-        unwrap: unwrap,
-        closest: closest,
-        after: after,
-        before: before,
-        insertBefore: insertBefore,
-        getScrollTop: getScrollTop,
-        siblings: siblings,
-        preventDefault: preventDefault,
-        isFunction: isFunction,
-        trigger: trigger,
-        matches: matches,
-        toggle: toggle,
-        createElementFromHTML: createElementFromHTML,
-        remove: remove,
-        filter: filter,
-        untilAll: untilAll,
-        nextAll: nextAll,
-        prevAll: prevAll,
-        showError: showError
-    };
+    
 
     return initialise;
 }));
