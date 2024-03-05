@@ -1098,6 +1098,8 @@
         /**
         * Actions and callbacks to fire afterRender
         */
+       //setting the visible section as active when manually scrolling
+                //executing only once the first time we reach the section
         function afterRenderActions(){
             var section = $(SECTION_ACTIVE_SEL)[0];
 
@@ -1188,8 +1190,7 @@
                 //geting the last one, the current one on the screen
                 currentSection = sections[visibleSectionIndex];
 
-                //setting the visible section as active when manually scrolling
-                //executing only once the first time we reach the section
+                
                 
                     if(activeSlide){
                         slideAnchorLink = activeSlide.getAttribute('data-anchor');
