@@ -1190,25 +1190,7 @@
 
                 //setting the visible section as active when manually scrolling
                 //executing only once the first time we reach the section
-                if(!hasClass(currentSection, ACTIVE)){
-                    isScrolling = true;
-                    var leavingSection = $(SECTION_ACTIVE_SEL)[0];
-                    var leavingSectionIndex = index(leavingSection, SECTION_SEL) + 1;
-                    var yMovement = getYmovement(currentSection);
-                    var anchorLink  = currentSection.getAttribute('data-anchor');
-                    var sectionIndex = index(currentSection, SECTION_SEL) + 1;
-                    var activeSlide = $(SLIDE_ACTIVE_SEL, currentSection)[0];
-                    var slideIndex;
-                    var slideAnchorLink;
-                    var callbacksParams = {
-                        activeSection: leavingSection,
-                        sectionIndex: sectionIndex -1,
-                        anchorLink: anchorLink,
-                        element: currentSection,
-                        leavingSection: leavingSectionIndex,
-                        direction: yMovement
-                    };
-
+                
                     if(activeSlide){
                         slideAnchorLink = activeSlide.getAttribute('data-anchor');
                         slideIndex = index(activeSlide);
