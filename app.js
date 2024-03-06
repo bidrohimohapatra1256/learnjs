@@ -3948,20 +3948,7 @@
         }
     }
 
-    //http://stackoverflow.com/questions/3464876/javascript-get-window-x-y-position-for-scroll
-    function getScrollTop(){
-        var doc = document.documentElement;
-        return (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-    }
-
-    /**
-    * Gets the siblings of the passed element
-    */
-    function siblings(el){
-        return Array.prototype.filter.call(el.parentNode.children, function(child){
-          return child !== el;
-        });
-    }
+   
 
     //for IE 9 ?
     function preventDefault(event){
